@@ -1,23 +1,26 @@
-{% set version = "3.0.12" %}
-{% set sha256 = "816d498196d3f5e63f9ba07520a4973c6ca22b3f96d7296142707c4176fff75b" %}
+{% set name = "django-nested-admin" %}
+{% set version = "3.0.21" %}
+{% set build = 0 %}
+{% set sha256 = "e0868d3e97b12007f65bd5c216b69e841e796938376b5751309094904907aa65" %}
 
 package:
-  name: django-nested-admin
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: django-nested-admin-{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/theatlantic/django-nested-admin/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: {{ build }}
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - python-monkey-business >=1.0.0
 
   run:
@@ -39,8 +42,12 @@ test:
 about:
   home: https://github.com/theatlantic/django-nested-admin
   license: BSD 2-Clause
-  summary: 'Django admin classes that allow for nested inlines'
+  license_file: LICENSE
   license_family: BSD
+  summary: Django admin classes that allow for nested inlines
+  dev_url: https://github.com/theatlantic/django-nested-admin
+  doc_url: https://github.com/theatlantic/django-nested-admin
+
 
 extra:
   recipe-maintainers:
