@@ -11,6 +11,16 @@ Summary: Django admin classes that allow for nested inlines
 
 
 
+Current build status
+====================
+
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/django-nested-admin-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/django-nested-admin-feedstock)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/django-nested-admin/badges/version.svg)](https://anaconda.org/conda-forge/django-nested-admin)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/django-nested-admin/badges/downloads.svg)](https://anaconda.org/conda-forge/django-nested-admin)
+
 Installing django-nested-admin
 ==============================
 
@@ -31,7 +41,6 @@ It is possible to list all of the versions of `django-nested-admin` available on
 ```
 conda search django-nested-admin --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -55,6 +64,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
@@ -67,18 +77,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/django-nested-admin-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/django-nested-admin-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/django-nested-admin-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/django-nested-admin-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/django-nested-admin-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/django-nested-admin-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/django-nested-admin/badges/version.svg)](https://anaconda.org/conda-forge/django-nested-admin)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/django-nested-admin/badges/downloads.svg)](https://anaconda.org/conda-forge/django-nested-admin)
 
 
 Updating django-nested-admin-feedstock
