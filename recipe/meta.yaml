@@ -1,7 +1,7 @@
 {% set name = "django-nested-admin" %}
-{% set version = "3.0.21" %}
+{% set version = "3.1.0" %}
 {% set build = 0 %}
-{% set sha256 = "e0868d3e97b12007f65bd5c216b69e841e796938376b5751309094904907aa65" %}
+{% set sha256 = "02f3c155306076c436da0c87ccbab5cefee43141d46cd1286e48a033fd865399" %}
 
 package:
   name: {{ name }}
