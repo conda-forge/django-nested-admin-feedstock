@@ -1,4 +1,4 @@
-{% set version = "3.2.2" %}
+{% set version = "3.2.3" %}
 
 package:
   name: django-nested-admin
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/theatlantic/django-nested-admin/archive/v{{ version }}.tar.gz
-  sha256: fdd019674aaada5a0fab79e48e4e63f6553390373e4ffd95dd2ffb49f6e84352
+  sha256: 25b21cd83adca43e1cf1dc84fed35c84e25a5c2d559bfc36b579d95026aecd01
 
 build:
   number: 0
